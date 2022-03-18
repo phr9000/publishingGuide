@@ -3,6 +3,7 @@
 @import "./abstracts/variables";
 
 .sidebar-box {
+  position: fixed;
   width: 25rem;
   height: 100vh;
   padding-top: 5.6rem;
