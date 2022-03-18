@@ -102,7 +102,7 @@ function images() {
 
 // html function
 function html(done) {
-  return src(["./src/html/**/*.*", "!./src/html/component/**/*.*"])
+  return src(["./src/html/**/*.*"])
     .pipe(
       fileinclude({
         prefix: "@@",
