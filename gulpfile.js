@@ -115,20 +115,20 @@ function html(done) {
 }
 
 // Mainhtml function
-function Mainhtml(done) {
-  return src(["./src/html/main/main.html"])
-    .pipe(
-      fileinclude({
-        prefix: "@@",
-        basepath: "./src/html/component",
-      })
-    )
-    .pipe(concat("index.html"))
-    .pipe(prettyHtml())
-    .pipe(dest("./"));
+// function Mainhtml(done) {
+//   return src(["./src/html/main/main.html"])
+//     .pipe(
+//       fileinclude({
+//         prefix: "@@",
+//         basepath: "./src/html/component",
+//       })
+//     )
+//     .pipe(concat("index.html"))
+//     .pipe(prettyHtml())
+//     .pipe(dest("./"));
 
-  done();
-}
+//   done();
+// }
 
 // font function
 function font(done) {
@@ -144,7 +144,7 @@ function watchFiles() {
   watch("./src/js/*", js);
   watch("./src/images/*", images);
   watch("./src/html/**/*.*", html);
-  watch("./src/html/*main/main.html", Mainhtml);
+  // watch("./src/html/*main/main.html", Mainhtml);
 }
 
 // BrowserSync

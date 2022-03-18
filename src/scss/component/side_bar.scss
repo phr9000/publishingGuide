@@ -5,6 +5,28 @@
 .sidebar-box {
   width: 25rem;
   height: 100vh;
-  overflow-x: auto;
-  background-color: $gray-3;
+  padding-top: 5.6rem;
+  overflow-y: scroll;
+  background-color: $gray-6;
+  transition: all 0.3s ease-out;
+
+  .title {
+    padding: 1rem 2rem;
+    @include font(1.8rem, 500, $gray-4, normal);
+    background-color: $gray-5;
+  }
+
+  .list {
+    .list-item {
+      @include flex(row, flex-start, center);
+      padding: 20px;
+      @include font(1.8rem, 200, $white, normal);
+      background-color: $gray-3;
+      margin-bottom: 1px;
+      .inner {
+        cursor: pointer;
+        color: $white;
+      }
+    }
+  }
 }
