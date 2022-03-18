@@ -1,0 +1,51 @@
+
+
+// 버튼 아이콘들 
+[class^=btn-icon-] {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid gray;
+  > span {
+    position: absolute;
+    height: 1px;  
+    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px);  
+    overflow: hidden;
+    text-indent: -9999px;
+    font-size: 0;
+  }
+  &:hover:not(:disabled) {
+    background-color: #eee;
+  }
+  &:active {
+    background-color: rgb(155, 199, 219);
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 0.4;
+  }
+}
+
+.btn-icon-user {
+  background: asset-image('header_icon_profile_nor.svg') no-repeat center;
+  &:hover:not(:disabled) {
+    background: asset-image('header_icon_profile_ov.svg') no-repeat center;
+  }
+  &:active {
+    background: asset-image('header_icon_profile_pre.svg') no-repeat center;
+  }
+}
+.btn-icon-edit {
+  background: asset-image('btn_icon_edit_nor.svg') no-repeat center;
+}
+.btn-icon-add {
+  background: asset-image('plus_icon_details_n.svg') no-repeat center;
+}
+.btn-icon-delete {
+  background: asset-image('btn_icon_delete_nor.svg') no-repeat center;
+}
+.btn-icon-close {
+  background: asset-image('x_btn_icon.svg') no-repeat center;
+}

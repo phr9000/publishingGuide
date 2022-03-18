@@ -1,0 +1,162 @@
+
+
+/*
+Table
+*/
+table {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #dbdbdb;
+
+  thead {
+    width: 100%;
+    border-bottom: 1px solid #e9ecf7;
+    background-color: #f9fafb;
+
+    th {
+      @include font(14px, 500, #333, 20px);
+      overflow: hidden;
+      padding: 4px 10px;
+      vertical-align: middle;
+      @include ellipsis();
+      text-transform: capitalize;
+    }
+  }
+
+  &.empty {
+    .table-body-container {
+      overflow: hidden;
+    }
+
+    tbody {
+      td {
+        height: 195px;
+        @include font(14px, 400, #c4c4c4, 20px);
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border-top:1px solid #eaeaea;
+    }
+
+    td {
+      @include font(14px, 400, #333, normal);
+      height: 39px;
+      padding: 0 10px;
+      text-align: center;
+      vertical-align: middle;
+      white-space: nowrap;
+
+      &.align-left {
+        text-align: left;
+      }
+
+      &.align-right {
+        text-align: right;
+
+        >* {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+.table-body-container {
+  position: relative;
+  border-bottom: 1px solid #dbdbdb;
+  max-height: 196px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  table {
+    border-bottom: none;
+    table-layout: fixed;
+  }
+
+  .table-body {
+    tr {
+      td {
+        padding: 0 10px;
+        box-sizing: border-box;
+
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+/*
+Pagination
+*/
+.pagination-area {
+  margin-top: 30px;
+  @include flex(row, center, center);
+
+  .page {
+    @include font(14px, 400, #333, normal);
+    min-width: 28px;
+    height: 28px;
+    margin: 0 1px;
+    padding: 0 10px;
+    border-radius: 3px;
+    text-align: center;
+    transition: background-color .2s, color .2s;
+
+    span {
+      top: -1px;
+    }
+
+    &.current,
+    &:hover:not(:disabled) {
+      @include font(14px, 400, #fff, normal);
+      padding: 0 10px;
+      background-color: $primary;
+    }
+
+    &:disabled {
+      opacity: 1;
+
+      span {
+        color: #cdcdcd;
+      }
+    }
+  }
+
+  .page-before {
+    background:asset-image('icon_go_before.png') no-repeat center / 28px;
+
+    &:disabled {
+      background:asset-image('icon_dim_go_before.png') no-repeat center / 28px;
+    }
+  }
+
+  .page-prev {
+    background:asset-image('icon_go_prev.png') no-repeat center / 28px;
+
+    &:disabled {
+      background:asset-image('icon_dim_go_before.png') no-repeat center / 28px;
+    }
+  }
+
+  .page-next {
+    background:asset-image('icon_go_next.png') no-repeat center / 28px;
+
+    &:disabled {
+      background:asset-image('icon_dim_go_before.png') no-repeat center / 28px;
+    }
+  }
+
+  .page-after {
+    background:asset-image('icon_go_after.png') no-repeat center / 28px;
+
+    &:disabled {
+      background:asset-image('icon_dim_go_before.png') no-repeat center / 28px;
+    }
+  }
+}

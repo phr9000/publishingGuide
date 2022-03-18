@@ -1,0 +1,47 @@
+/* #=========================================# 
+| Size
+| #=========================================# */
+
+// basic layout height size
+$header: 60px;
+$footer: 120px;
+$content: calc(100vh - #{$header} - #{$footer});
+
+// popup size
+$full: 100%;
+$large: 600px;
+$medium: 420px;
+$small: 320px;
+
+// responsive
+// 넘버링이 클수록 작은 사이즈
+$pc_1: "screen and (max-width: 1680px)";
+$pc_2: "screen and (max-width: 1440px)";
+$pc_3: "screen and (max-width: 960px)";
+
+$tablet_1: "screen and (max-width: 768px)";
+
+$mobile_1: "screen and (max-width: 440px)";
+$mobile_2: "screen and (max-width: 320px)";
+
+/* #=========================================# 
+| Color
+| #=========================================# */
+
+// color palette
+$primary: #04a3bb;
+$secondary: #2c2c2e;
+
+// white
+$white: #ffffff;
+
+// black
+$black: #000000;
+
+// gray
+$gray-1: #333333;
+$gray-2: #656565;
+$gray-3: #333;
+
+// red
+$red-1: #f44049;

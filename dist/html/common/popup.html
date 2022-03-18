@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Publishing Team HTML Template</title>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+
+    <script type="text/javascript" src="../../assets/js/lib/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/bundle.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+    </div>
+    <!-- Begin Popup -->
+    <!-- popup의 출력 여부는 show 클래스로 제어 -->
+    <div class="popup show">
+        <div class="dim"></div>
+        <!-- 
+      default: 기본 사이즈 
+      .popup-full : 화면 가득 채우는 사이즈
+      .popup-large : Ex) 600px 사이즈
+      .popup-medium : Ex) 420px 사이즈
+      .popup-small : Ex) 320px 사이즈
+    -->
+        <div class="popup-container popup-large popup-[unique]">
+            <div class="popup-area">
+                <div class="popup-top">
+                    <div class="title-box">
+                        <span>Popup</span>
+                    </div>
+                    <button type="button" class="btn-icon-close"><span class="ir">Close</span></button>
+                </div>
+                <div class="popup-middle">
+                    <div class="text-box">
+                        <span>Content</span>
+                    </div>
+                </div>
+                <div class="popup-bottom">
+                    <div class="button-box">
+                        <button type="button" class="btn btn-primary"><span>OK</span></button>
+                        <button type="button" class="btn btn-secondary" disabled><span>Cancel</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+/*
+프로젝트 시작 시 삭제 
+*/
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  &.show {
+    .dim {
+      display: block;
+    }
+    .popup-container {
+      display: block;
+    }
+  }
+  .dim {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($gray-2, 0.7);
+  }
+}
+
+.popup-container {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  background-color: white;
+  transform: translate(-50%, -50%);
+
+  &.popup-full {
+    width: $full;
+  }
+  &.popup-large {
+    width: $large;
+  }
+  &.popup-medium {
+    width: $medium;
+  }
+  &.popup-small {
+    width: $small;
+  }
+
+  .btn-icon-close {
+    z-index: 100;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .popup-top {
+    position: relative;
+    padding: 4rem 0 0 0;
+    text-align: center;
+    .title-box {
+      @include font(2.4rem, 700, #000, normal);
+      letter-spacing: -0.133rem;
+    }
+  }
+
+  .popup-middle {
+    padding: 8rem 1rem;
+
+    .text-box {
+      @include font(1.9rem, 400, #000, normal);
+      letter-spacing: -0.053rem;
+      text-align: center;
+    }
+  }
+
+  .popup-bottom {
+    padding: 0 6.5rem 4rem 6.5rem;
+    text-align: center;
+    .button-container {
+      @include flex(row, center, flex-start);
+      .btn {
+        width: 18rem;
+        height: 5.9rem;
+      }
+    }
+  }
+}

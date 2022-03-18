@@ -1,0 +1,321 @@
+@@include("../component/head.html",{
+	"title" : "Publishing Team HTML Template" 
+})
+
+<body>
+  <div class="wrapper">
+    <div style="padding: 30px;">
+      <!-- 기본 테이블 -->
+      <h4 style="margin:0 0 15px; font-size: 30px; font-weight: 700;">기본 테이블</h4>
+      <div class="[table]-container [table-type]">
+        <div class="[table]-area">
+          <table class="[table]">
+            <colgroup>
+              <col/>
+              <col/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">text</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <div class="text-box">
+                    <span>1</span>
+                  </div>                
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>                
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <div class="text-box">
+                    <span>2</span>
+                  </div>                
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>                
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <td></td>
+              <td></td>
+            </tfoot>
+          </table>
+        </div>
+        <!-- //table -->
+  
+        <!-- pagenation -->
+        <div class="pagination-area">
+          <button type="button" class="page page-before"></button>
+          <button type="button" class="page page-prev"></button>
+          <div class="pager">
+            <button type="button" class="page page-1 current"><span>1</span></button>
+            <button type="button" class="page page-2"><span>2</span></button>
+            <button type="button" class="page page-3"><span>3</span></button>
+            <button type="button" class="page page-4"><span>4</span></button>
+            <button type="button" class="page page-5"><span>5</span></button>
+            <button type="button" class="page page-6"><span>6</span></button>
+            <button type="button" class="page page-7"><span>7</span></button>
+            <button type="button" class="page page-8"><span>8</span></button>
+            <button type="button" class="page page-9"><span>9</span></button>
+            <button type="button" class="page page-10"><span>10</span></button>
+            <button type="button" class="page page-ellipsis"><span>...</span></button>
+            <button type="button" class="page page-last"><span>9999</span></button>
+          </div>
+  
+          <button type="button" class="page page-next"></button>
+          <button type="button" class="page page-after"></button>
+        </div>
+      </div>
+  
+      <!-- 세로 스크롤 테이블  -->
+      <h4 style="margin:30px 0 15px; font-size: 30px; font-weight: 700;">세로 스크롤 테이블</h4>
+      <div class="table-container fixed-head">
+        <div class="table-area">
+        <!-- 상단 th  고정-->
+        <table class="table">
+          <colgroup>
+            <col width="3%">
+            <col width="8%">
+            <col width="10%">
+            <col width="auto">
+            <col width="auto">
+          </colgroup>
+          <thead class="table-header">
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">text</th>
+              <th scope="col">text</th>
+              <th scope="col">text</th>
+              <th scope="col">text</th>
+            </tr>
+          </thead>
+        </table>
+        <!-- 내용 td  스크롤-->
+        <div class="table-body-container">
+          <table class="table">
+            <colgroup>
+              <col width="3%">
+              <col width="8%">
+              <col width="10%">
+              <col width="auto">
+              <col width="auto">
+            </colgroup>
+  
+            <tbody class="table-body">
+              <tr>
+                <td>
+                  <div class="text-box">
+                    <span>1</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>texttexttexttext</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-box">
+                    <span>2</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>texttexttexttext</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-box">
+                    <span>3</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>texttexttexttext</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-box">
+                    <span>4</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>texttexttexttext</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-box">
+                    <span>5</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>texttexttexttext</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-box">
+                    <span>6</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>texttexttexttext</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="text-box">
+                    <span>text</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+  
+      <!-- 테이블 데이터 없음 -->
+      <h4 style="margin:30px 0 15px; font-size: 30px; font-weight: 700;">테이블 데이터 없음</h4>
+      <div class="table-container">
+        <div class="table-area">
+        <!-- 상단 th  고정-->
+        <table class="table empty">
+          <colgroup>
+            <col width="3%">
+            <col width="8%">
+            <col width="10%">
+            <col width="auto">
+            <col width="auto">
+          </colgroup>
+          <thead class="table-header">
+            <tr>
+              <th scope="col">No.</th>
+              <th scope="col">text</th>
+              <th scope="col">text</th>
+              <th scope="col">text</th>
+              <th scope="col">text</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="">
+              <td colspan="5">
+                <div class="text-box">
+                  <span>No data.</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+.sidebar-box {
+  width: 25rem;
+  height: 100vh;
+  overflow-x: auto;
+  background-color: $gray-3;
+}

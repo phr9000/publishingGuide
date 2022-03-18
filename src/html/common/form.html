@@ -1,0 +1,258 @@
+@@include("../component/head.html",{
+	"title" : "Publishing Team HTML Template" 
+})
+
+<body>
+  <div>
+
+    <section>
+      <div class="[content]-container">
+        <div class="[content]-area">
+
+          <div class="form-container" style="padding: 30px;">
+            <div class="form-area">
+              <!-- 드롭다운 가이드 - 선택 된 데이터가 있는 경우 -->
+              <div class="field field-dropdown field-[unique]">
+                <label class="field-label">드롭다운 샘플</label>
+                <div class="field-form">
+                  <div class="dropdown-container">
+                    <div id="dropdown-sample-id" class="dropdown-area"></div>
+                    <div class="select hide">
+                      <select id="select-sample-id" name="select-sample-id"></select>
+                      <span class="arrow"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 드롭다운 가이드 - 선택 된 데이터가 없는 경우-->
+              <div class="field field-dropdown field-[unique]">
+                <label class="field-label">드롭다운 샘플2</label>
+                <div class="field-form">
+                  <div class="dropdown-container">
+                    <div id="dropdown-sample-id-2" class="dropdown-area"></div>
+                    <div class="select hide">
+                      <select id="select-sample-id-2" name="select-sample-id"></select>
+                      <span class="arrow"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 미입력시 -->
+              <div class="field field-input field-[unique]">
+                <label class="field-label">레이블</label>
+                <div class="field-form">
+                  <input type="text" name="input-type-1" id="input-type-1" placeholder="Normal" />
+                </div>
+              </div>
+
+              <!-- 미입력시 레이블 두줄 시 -->
+              <div class="field field-input field-[unique] label-line-2">
+                <label class="field-label">레이블 두줄 시 레이블 두줄 시</label>
+                <div class="field-form">
+                  <input type="text" name="input-type-2" id="input-type-2" placeholder="Normal" />
+                </div>
+              </div>
+
+              <!-- 입력완료 -->
+              <div class="field field-input field-[unique]">
+                <label class="field-label">레이블</label>
+                <div class="field-form">
+                  <input type="text" name="input-type-22" id="input-type-22" placeholder="Normal" value="Filled" />
+                </div>
+              </div>
+
+              <!-- 비활성 -->
+              <div class="field field-input field-[unique]">
+                <label class="field-label">레이블</label>
+                <div class="field-form">
+                  <input type="text" name="input-type-3" id="input-type-3" placeholder="Disabled" disabled />
+                </div>
+              </div>
+
+              <!-- 에러 -->
+              <div class="field field-input field-[unique] error">
+                <label class="field-label">레이블</label>
+                <div class="field-form">
+                  <input type="text" name="input-type-4" id="input-type-4" value="Error" />
+                </div>
+                <p class="description">*경고 텍스트</p>
+              </div>
+
+              <!-- 하단 도움말 -->
+              <div class="field field-input field-[unique]">
+                <label class="field-label">레이블</label>
+                <div class="field-form">
+                  <input type="text" name="input-type-5" id="input-type-5" value="Filled" />
+                </div>
+                <p class="description">*도움말 텍스트</p>
+              </div>
+
+              <!-- 하단 체크박스 -->
+              <div class="field field-input field-[unique]">
+                <label class="field-label">레이블</label>
+                <div class="field-form">
+                  <input type="text" name="input-type-6" id="input-type-6" />
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="checkbox-1" id="checkbox-1" />
+                  <label for="checkbox-1">암호키 보기 (암호 : 10자 이상 64자 이하)</label>
+                </div>
+              </div>
+
+              <!-- 드롭다운 미입력시 -->
+              <div class="field field-dropdown field-[unique]">
+                <label class="field-label">레이블</label>
+                <div class="field-form">
+                  <div class="dropdown-container">
+                    <div id="dropdown-unique-id" class="dropdown-area">
+                      <div class="select-option filled">
+                        <span>Normal</span>
+                      </div>
+                      <ul class="dropdown-list">
+                        <li class="list" value="option1">option1</li>
+                        <li class="list" value="option2">option2</li>
+                        <li class="list" value="option3">option3</li>
+                        <li class="list" value="option4">option4</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 드롭다운 입력완료 -->
+              <div class="field field-dropdown field-[unique]">
+                <label class="field-label">레이블</label>
+                <div class="field-form">
+                  <div class="dropdown-container">
+                    <div id="dropdown-unique-id" class="dropdown-area">
+                      <!-- 옵션 선택시 filled 클래스 추가 -->
+                      <div class="select-option filled filled">
+                        <span>Filled</span>
+                      </div>
+                      <ul class="dropdown-list">
+                        <!-- 옵션 선택시 active 클래스 추가 -->
+                        <li class="list active" value="Filled">Filled</li>
+                        <!-- 옵션 선택시 disabled 클래스 추가 -->
+                        <li class="list disabled" value="option2">option2</li>
+                        <li class="list" value="option3">option3</li>
+                        <li class="list" value="option4">option4</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 드롭다운 비활성화 -->
+              <div class="field field-dropdown field-[unique]">
+                <label class="field-label">레이블</label>
+                <div class="field-form">
+                  <div class="dropdown-container">
+                    <!-- 비활성화시 disabled 클래스 추가 -->
+                    <div id="dropdown-unique-id" class="dropdown-area disabled">
+                      <div class="select-option filled">
+                        <span>Disabled</span>
+                      </div>
+                      <ul class="dropdown-list">
+                        <li class="list" value="option1">option1</li>
+                        <li class="list" value="option2">option2</li>
+                        <li class="list" value="option3">option3</li>
+                        <li class="list" value="option4">option4</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 체크박스 -->
+              <div class="field field-checkbox field-[unique]">
+                <div class="field-form">
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox-1" id="checkbox-1" checked />
+                    <label for="checkbox-1"></label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox-2" id="checkbox-2" />
+                    <label for="checkbox-2"></label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" name="checkbox-3" id="checkbox-3" disabled />
+                    <label for="checkbox-3"></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 라디오버튼 -->
+              <div class="field field-radio field-[unique]">
+                <div class="field-form">
+                  <div class="radio">
+                    <input type="radio" name="radio" id="radio-1" checked />
+                    <label for="radio-1"></label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="radio" id="radio-2" />
+                    <label for="radio-2"></label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="radio" id="radio-3" disabled />
+                    <label for="radio-3"></label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- general 버튼-->
+              <div class="button-box">
+                <button type="button" class="btn btn-primary"><span>Btn</span></button>
+                <button type="button" class="btn btn-primary" disabled><span>Btn</span></button>
+              </div>
+
+              <!-- 버튼 아이콘 -->
+              <div class="button-box" style="margin-top: 3rem;">
+                <button type="button" class="btn-icon-delete" disabled><span class="ir">버튼삭제아이콘</span></button>
+                <button type="button" class="btn-icon-add"><span class="ir">버튼추가아이콘</span></button>
+                <button type="button" class="btn-icon-edit"><span class="ir">버튼편집아이콘</span></button>
+              </div>
+
+              <!-- 아코디언 -->
+              <div class="accordion-box">
+                <div class="accordion-list">
+                  <div class="[accordion-item]">
+                    <!-- 버튼 자체 타이틀인 경우 // 버튼 클릭시 제어-->
+                    <button type="button" class="[accordion-title]">
+                      <div>title</div>
+                    </button>
+                    <div class="[accordion-content]">
+                      아코디언 해당 정보
+                    </div>
+                  </div>
+                  <div class="[accordion-item]">
+                    <!-- 아이콘 클릭시에만 제어할 경우 -->
+                    <div class="[accordion-title]">
+                      <div>title</div>
+                      <button type="button" class="btn-icon-[arrow]"><span class="[ir]">버튼화살표아이콘</span></button>
+                    </div>
+                    <div class="[accordion-content]">
+                      아코디언 해당 정보
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- canvas -->
+              <div class="canvas-container">
+                <div class="canvas-area">
+                  <div class="canvas">
+                    <canvas id="chart" width="1080" height="250" style="width:100%; height:25rem"></canvas>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

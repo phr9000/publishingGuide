@@ -1,0 +1,54 @@
+/*
+pageLabel : Tab 이름
+
+category : 카테고리
+dirRoute : 폴더 이름
+pageName : 페이지 이름
+fileName : 파일 이름
+progress : 진행 상태 ( 완료, 진행중 )
+*/
+
+export let pageLabel = 'Page1';
+
+export let data = [{
+    category: '공통1',
+    dirRoute: 'common',
+    list: [{
+        pageName: '기본 레이아웃',
+        fileName: 'common',
+        progress: '완료',
+      },
+      {
+        pageName: 'Tab',
+        fileName: 'tab',
+        progress: '완료',
+      },
+      {
+        pageName: 'form',
+        fileName: 'form',
+        progress: '완료',
+      },
+      {
+        pageName: 'Table',
+        fileName: 'table',
+        progress: '완료',
+      },
+      {
+        pageName: 'Popup',
+        fileName: 'popup',
+        progress: '완료',
+      }
+    ]
+  },
+
+  {
+    category: '샘플',
+    dirRoute: 'yourDir',
+    list: [{
+      pageName: '샘플1',
+      fileName: 'yourFile',
+      progress: '진행중',
+    }, ]
+  },
+
+];

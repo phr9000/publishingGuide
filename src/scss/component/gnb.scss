@@ -1,0 +1,10 @@
+
+
+/*
+프로젝트 시작 시 삭제 
+*/
+.gnb {
+  > ul {
+    @include flex(row, flex-start, flex-start);
+  }
+}

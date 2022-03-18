@@ -1,0 +1,21 @@
+
+
+/*
+프로젝트 시작 시 삭제 
+*/
+$lnbSize : 200px;
+.lnb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $lnbSize;
+  background-color: $primary;
+  .lnb-area {
+
+  }
+
+  + * {
+    margin-left: $lnbSize;
+  }
+}

@@ -1,0 +1,59 @@
+@@include("../component/head.html",{
+	"title" : "Publishing Team HTML Template" 
+})
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      @@include("../component/header.html",{
+        "title" : "Publishing Team HTML Template" 
+      })      
+    </header>
+    <!-- //header -->
+
+    <!-- main -->
+    <main class="main">
+      <!-- Lnb -->
+      <nav class="lnb">
+        <ul class="lnb-list-box">
+          <li class="lnb-list first">
+            <a href="#">
+              <span>Menu1</span>
+            </a>
+          </li>
+          
+          <li class="lnb-list">
+            <a href="#">
+              <span>Menu2</span>
+            </a>
+          </li>
+
+          <li class="lnb-list last">
+            <a href="#">
+              <span>Menu3</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- section -->
+      <section class="[section]">
+        <article class="[article]">
+          <div class="text-box">
+            <span>CONTENT</span>
+          </div>
+        </article>
+      </section>
+      <!-- // section -->
+    </main>
+    <!-- // main -->
+
+    <!-- footer -->
+    <footer class="footer">
+      @@include("../component/footer.html")   
+    </footer>
+    <!-- //footer -->
+  </div>
+</body>
+
+</html>
