@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="date-slide swiper">
+      <div class="swiper-wrapper">
+        <div class="date-item swiper-slide result">
+          <p class="year">2022</p>
+          <p class="month">6월</p>
+          <p class="bage result">결과발표</p>
+        </div>
+        <div class="date-item swiper-slide result active">
+          <p class="year">2022</p>
+          <p class="month">7월</p>
+          <p class="bage result">결과발표</p>
+        </div>
+        <div class="date-item swiper-slide ing">
+          <p class="year">2022</p>
+          <p class="month">8월</p>
+          <p class="bage result">투표중</p>
+        </div>
+        <div class="date-item swiper-slide will">
+          <p class="year">2022</p>
+          <p class="month">9월</p>
+          <p class="bage result">예정</p>
+        </div>
+        <div class="date-item swiper-slide will">
+          <p class="year">2022</p>
+          <p class="month">10월</p>
+          <p class="bage result">예정</p>
+        </div>
+        <div class="date-item swiper-slide will">
+          <p class="year">2022</p>
+          <p class="month">11월</p>
+          <p class="bage result">예정</p>
+        </div>
+        <div class="date-item swiper-slide will">
+          <p class="year">2022</p>
+          <p class="month">12월</p>
+          <p class="bage result">예정</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <script
+      type="text/javascript"
+      src="../../assets/js/jquery-3.6.0.min.js"
+    ></script>
+    <script src="../../assets/js/common.js"></script>
+    <script
+      type="text/javascript"
+      src="../../assets/js/swiper-bundle.min.js"
+    ></script>
+    <script>
+      var NavTabsSwiper = new Swiper(".date-slide", {
+        slidesPerView: "5.4",
+        spaceBetween: 5,
+      });
+    </script>
+  </body>
+</html>
