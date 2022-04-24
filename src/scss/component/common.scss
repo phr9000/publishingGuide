@@ -2,6 +2,13 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 
+// 타이틀 스타일
+h2 {
+  font-size: 20px;
+  font-style: bold;
+  padding-bottom: 2rem;
+}
+
 // 스크롤 스타일
 .beauty-scroll {
   ::-webkit-scrollbar {
@@ -121,4 +128,11 @@
       }
     }
   }
+}
+
+// swiper
+.mySwiper {
+  position: relative;
+  max-width: 1200px;
+  overflow: hidden;
 }
