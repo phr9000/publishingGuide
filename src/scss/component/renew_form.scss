@@ -2,414 +2,453 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 
-.content.cooperation {
-  -webkit-tap-highlight-color: transparent;
-  .cooperation-bg {
-    width: 100vw;
-    height: calc(100vh - 225px);
-    min-height: 539px;
-    background-image: url("../img/dummy/cooperation_bg.png"); //
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    .cooperation-con {
-      width: 100%;
-      height: 100%;
-      max-width: 1920px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .title {
-        text-align: center;
-      }
-      h1 {
-        font-size: 5.4rem;
-        font-weight: 700;
-        letter-spacing: -2.25px;
-        line-height: 6rem;
-        margin-bottom: 22px;
-      }
-      .desc {
-        font-size: 2.4rem;
-        letter-spacing: -0.5px;
-        color: rgba($color: #fff, $alpha: 0.7);
-        .top {
-          font-size: 2.4rem;
-          color: rgba(255, 255, 255, 0.7);
-        }
-        .bottom {
-          display: inline-block;
-          font-size: 1.6rem;
-          letter-spacing: -0.33px;
-          color: rgba(255, 255, 255, 0.4);
-        }
-      }
-    }
+// .content.cooperation {
+//   -webkit-tap-highlight-color: transparent;
+//   .cooperation-bg {
+//     width: 100vw;
+//     height: calc(100vh - 225px);
+//     min-height: 539px;
+//     background-image: url("../img/dummy/cooperation_bg.png"); //
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     .cooperation-con {
+//       width: 100%;
+//       height: 100%;
+//       max-width: 1920px;
+//       margin: 0 auto;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       .title {
+//         text-align: center;
+//       }
+//       h1 {
+//         font-size: 5.4rem;
+//         font-weight: 700;
+//         letter-spacing: -2.25px;
+//         line-height: 6rem;
+//         margin-bottom: 22px;
+//       }
+//       .desc {
+//         font-size: 2.4rem;
+//         letter-spacing: -0.5px;
+//         color: rgba($color: #fff, $alpha: 0.7);
+//         .top {
+//           font-size: 2.4rem;
+//           color: rgba(255, 255, 255, 0.7);
+//         }
+//         .bottom {
+//           display: inline-block;
+//           font-size: 1.6rem;
+//           letter-spacing: -0.33px;
+//           color: rgba(255, 255, 255, 0.4);
+//         }
+//       }
+//     }
+//   }
+
+//   // form
+
+//   .form-area {
+//     width: 100%;
+//     height: 100%;
+//     background-color: #fff;
+
+//     input {
+//       -webkit-appearance: none;
+//       -moz-appearance: none;
+//       appearance: none;
+//       -webkit-border-radius: 0;
+//     }
+
+//     /* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+//     input::-ms-clear {
+//       display: none;
+//     }
+
+//     /* input type number 에서 화살표 제거 */
+//     input[type="number"]::-webkit-inner-spin-button,
+//     input[type="number"]::-webkit-outer-spin-button {
+//       -webkit-appearance: none;
+//       -moz-appearance: none;
+//       appearance: none;
+//     }
+
+//     /* Select box 스타일 초기화 */
+//     select {
+//       -webkit-appearance: none;
+//       -moz-appearance: none;
+//       appearance: none;
+//     }
+
+//     /* IE 에서 Select box 화살표 제거 */
+//     select::-ms-expand {
+//       display: none;
+//     }
+//     /* Input */
+//     input[type="text"],
+//     input[type="number"],
+//     input[type="tel"],
+//     input[type="email"],
+//     input[type="password"] {
+//       width: 100%;
+//       height: 8rem;
+//       padding: 0 3rem;
+//       margin: 0;
+//       outline-offset: 0;
+//       box-sizing: border-box;
+//       border: solid 2px rgba(0, 0, 0, 0.1);
+//       border-radius: 12px;
+//       font-size: 2rem;
+//       color: #323232 !important;
+//       line-height: 1.5;
+//       font-weight: 500;
+//       &:focus {
+//         outline: none;
+//         border-color: $point-pink;
+//       }
+//       &::placeholder {
+//         color: rgba(#323232, 0.3) !important;
+//         // opacity: 0.3;
+//         font-weight: 500;
+//       }
+//       &:read-only,
+//       &.readonly,
+//       &:disabled,
+//       &.disabled {
+//       }
+//     }
+//     input[type="checkbox"],
+//     input[type="radio"] {
+//       cursor: pointer;
+//       position: absolute;
+//       padding: 0;
+//       margin: 0;
+//     }
+
+//     /* textarea */
+//     textarea {
+//       display: block;
+//       width: 100%;
+//       min-height: 23rem;
+//       resize: none;
+//       padding: 1.6rem 2rem 4rem;
+//       border: solid 2px rgba(0, 0, 0, 0.1);
+//       border-radius: 1.2rem;
+//       box-sizing: border-box;
+//       font-size: 2rem;
+//       font-weight: 500;
+//       color: #323232;
+//       &:focus {
+//         outline: none;
+//         border-color: $point-pink;
+//       }
+//       &::placeholder {
+//         color: rgba(#323232, 0.3) !important;
+//         font-weight: 500;
+//       }
+//     }
+
+//     .form-inner {
+//       max-width: 75%;
+//       padding: 8rem 0 14rem 0;
+//       margin: 0 auto;
+//       -moz-transition: all 0.25s ease-in-out 0.3s;
+//       -webkit-transition: all 0.25s ease-in-out 0.3s;
+//       -o-transition: all 0.25s ease-in-out 0.3s;
+//       transition: all 0.25s ease-in-out 0.3s;
+
+//       .title-area {
+//         padding-bottom: 6rem;
+//         .title {
+//           padding-bottom: 1rem;
+//           font-size: 3rem;
+//           color: #323232;
+//           font-weight: bold;
+//           line-height: 4.5rem;
+//         }
+//         .desc-area {
+//           display: flex;
+//           font-size: 2rem;
+//           color: #6e6e6e;
+//           font-weight: 500;
+//           line-height: 3rem;
+//           .star {
+//             margin-right: 4px;
+//           }
+//         }
+//       }
+
+//       .form-item-area {
+//         width: 100%;
+//         .field {
+//           margin-bottom: 3rem;
+//           .field-label {
+//             display: inline-block;
+//             margin-bottom: 1rem;
+//             font-size: 2.4rem;
+//             color: #323232;
+//             font-weight: bold;
+//             line-height: 3.6rem;
+//             cursor: auto;
+//           }
+//         }
+//       }
+
+//       // 개인정보 수집안내
+//       .info-box {
+//         padding-bottom: 1rem;
+//         .title-area {
+//           padding-bottom: 2rem;
+//           .title {
+//             position: relative;
+//             font-size: 2.4rem;
+//             font-weight: bold;
+//             line-height: 3.6rem;
+//             &:after {
+//               display: block;
+//               content: "";
+//               width: 100%;
+//               height: 2px;
+//               margin-top: 1rem;
+//               background-color: #000;
+//             }
+//           }
+//         }
+//         .content-box {
+//           width: 100%;
+//           height: 100%;
+//           border-radius: 1.2rem;
+//           border: 2px solid rgba(0, 0, 0, 0.1);
+//           .content-inner {
+//             padding: 2.5rem 3rem;
+//             .text-area {
+//               display: flex;
+//               // align-items: center;
+//               > span {
+//                 display: block;
+//                 font-size: 2rem;
+//                 font-weight: 500;
+//                 color: #323232;
+//                 opacity: 0.5;
+//               }
+//             }
+//           }
+//         }
+//       }
+
+//       // 동의 체크버튼
+//       .checkbox {
+//         display: flex;
+//         align-items: center;
+//         position: relative;
+//         padding: 1rem 0 11.3rem 0;
+//         font-size: 2.4rem;
+//         line-height: 3.6rem;
+//         color: #323232;
+//         font-weight: bold;
+
+//         .checkbox-label {
+//           display: flex;
+//           align-items: center;
+//           justify-content: flex-start;
+//         }
+//         input[type="checkbox"]:checked {
+//           & + label > .icon {
+//             background-image: url("../img/dummy/check_btn_pressed.png");
+//           }
+//         }
+//         .icon {
+//           display: inline-block;
+//           width: 2.8rem;
+//           height: 2.8rem;
+//           margin-right: 1rem;
+//           background-image: url("../img/dummy/check_btn_normal.png"); //
+//           background-size: cover;
+//           background-repeat: no-repeat;
+//           background-position: center;
+//         }
+
+//         .require {
+//           color: $point-pink;
+//         }
+//       }
+
+//       // 문의하기
+//       .view-btn {
+//         margin: 0 auto;
+//         display: flex;
+//         width: 280px;
+//         height: 62px;
+//         align-items: center;
+//         justify-content: center;
+//         border-radius: 31px;
+//         background-color: $point-pink;
+//         font-weight: 500;
+//         font-size: 2.4rem;
+//         letter-spacing: -1.33px;
+//       }
+//     }
+//   }
+// }
+
+// @include responsive(M) {
+//   .content.cooperation {
+//     .cooperation-bg {
+//       height: 92.5vw;
+//       min-height: 370px;
+//       background-image: url("../img/dummy/cooperation_bg_mo.png");
+//       .cooperation-con {
+//         .title {
+//           padding: 0 5%;
+//         }
+//         h1 {
+//           font-size: 3rem;
+//           letter-spacing: -1.8px;
+//           line-height: 4.5rem;
+//           margin-bottom: 8px;
+//         }
+//         .desc {
+//           .top {
+//             display: inline-block;
+//             padding-bottom: 1.6rem;
+//             font-size: 1.5rem;
+//             letter-spacing: -0.63px;
+//             line-height: 1.8rem;
+//             color: #fff;
+//           }
+//           .bottom {
+//             font-size: 1.2rem;
+//             letter-spacing: -0.5px;
+//             line-height: 1.8rem;
+//             color: rgba(255, 255, 255, 0.6);
+//             > span {
+//               display: block;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     .form-area {
+//       input[type="text"],
+//       input[type="number"],
+//       input[type="tel"],
+//       input[type="email"],
+//       input[type="password"] {
+//         height: auto;
+//         padding: 1.3rem 1.5rem;
+//         font-size: 1.6rem;
+//       }
+//       .form-inner {
+//         width: 100%;
+//         max-width: 100%;
+//         padding: 3rem 2.4rem 6rem 2.4rem;
+//         .title-area {
+//           padding-bottom: 3rem;
+//           .desc-area {
+//             line-height: 2.5rem;
+//             .desc {
+//               font-size: 1.5rem;
+//             }
+//           }
+//         }
+
+//         .form-item-area {
+//           .field {
+//             margin-bottom: 2rem;
+//             .field-label {
+//               font-size: 1.7rem;
+//               line-height: 2.5rem;
+//             }
+//           }
+
+//           .info-box {
+//             .title-area {
+//               .title {
+//                 line-height: 2.5rem;
+//                 font-size: 1.7rem;
+//               }
+//             }
+
+//             .content-box {
+//               .content-inner {
+//                 padding: 1.3rem 1.5rem;
+//                 .text-area {
+//                   padding-bottom: 4px;
+//                   > span {
+//                     font-size: 1.5rem;
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//         }
+
+//         .checkbox {
+//           padding: 1rem 0 5.2rem 0;
+//           line-height: 2.8rem;
+//           font-size: 1.5rem;
+//           .checkbox-label {
+//             align-items: flex-start;
+//           }
+//           .icon {
+//             margin-right: 0.5rem;
+//           }
+//         }
+
+//         .view-btn {
+//           margin: 0px auto;
+//           width: 196px;
+//           height: 43.5px;
+//           border-radius: 21.25px;
+//           font-size: 1.68rem;
+//           letter-spacing: -1.33px;
+//         }
+//       }
+
+//       textarea {
+//         font-size: 1.6rem;
+//       }
+//     }
+//   }
+// }
+
+.responsive-table {
+  h2 {
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  td,
+  th {
+    text-align: left;
+    padding: 0.5rem 1rem;
   }
 
-  // form
-
-  .form-area {
+  tbody tr:nth-child(odd) {
+    background-color: #ccc;
+  }
+  .wrapper {
+    padding-right: 20px;
+    max-width: 100%;
     width: 100%;
-    height: 100%;
-    background-color: #fff;
-
-    input {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      -webkit-border-radius: 0;
-    }
-
-    /* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
-    input::-ms-clear {
-      display: none;
-    }
-
-    /* input type number 에서 화살표 제거 */
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-    }
-
-    /* Select box 스타일 초기화 */
-    select {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-    }
-
-    /* IE 에서 Select box 화살표 제거 */
-    select::-ms-expand {
-      display: none;
-    }
-    /* Input */
-    input[type="text"],
-    input[type="number"],
-    input[type="tel"],
-    input[type="email"],
-    input[type="password"] {
+    overflow: auto;
+    table {
       width: 100%;
-      height: 8rem;
-      padding: 0 3rem;
-      margin: 0;
-      outline-offset: 0;
-      box-sizing: border-box;
-      border: solid 2px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-      font-size: 2rem;
-      color: #323232 !important;
-      line-height: 1.5;
-      font-weight: 500;
-      &:focus {
-        outline: none;
-        border-color: $point-pink;
-      }
-      &::placeholder {
-        color: rgba(#323232, 0.3) !important;
-        // opacity: 0.3;
-        font-weight: 500;
-      }
-      &:read-only,
-      &.readonly,
-      &:disabled,
-      &.disabled {
-      }
-    }
-    input[type="checkbox"],
-    input[type="radio"] {
-      cursor: pointer;
-      position: absolute;
-      padding: 0;
-      margin: 0;
-    }
-
-    /* textarea */
-    textarea {
-      display: block;
-      width: 100%;
-      min-height: 23rem;
-      resize: none;
-      padding: 1.6rem 2rem 4rem;
-      border: solid 2px rgba(0, 0, 0, 0.1);
-      border-radius: 1.2rem;
-      box-sizing: border-box;
-      font-size: 2rem;
-      font-weight: 500;
-      color: #323232;
-      &:focus {
-        outline: none;
-        border-color: $point-pink;
-      }
-      &::placeholder {
-        color: rgba(#323232, 0.3) !important;
-        font-weight: 500;
-      }
-    }
-
-    .form-inner {
-      max-width: 75%;
-      padding: 8rem 0 14rem 0;
-      margin: 0 auto;
-      -moz-transition: all 0.25s ease-in-out 0.3s;
-      -webkit-transition: all 0.25s ease-in-out 0.3s;
-      -o-transition: all 0.25s ease-in-out 0.3s;
-      transition: all 0.25s ease-in-out 0.3s;
-
-      .title-area {
-        padding-bottom: 6rem;
-        .title {
-          padding-bottom: 1rem;
-          font-size: 3rem;
-          color: #323232;
-          font-weight: bold;
-          line-height: 4.5rem;
-        }
-        .desc-area {
-          display: flex;
-          font-size: 2rem;
-          color: #6e6e6e;
-          font-weight: 500;
-          line-height: 3rem;
-          .star {
-            margin-right: 4px;
-          }
-        }
-      }
-
-      .form-item-area {
-        width: 100%;
-        .field {
-          margin-bottom: 3rem;
-          .field-label {
-            display: inline-block;
-            margin-bottom: 1rem;
-            font-size: 2.4rem;
-            color: #323232;
-            font-weight: bold;
-            line-height: 3.6rem;
-            cursor: auto;
-          }
-        }
-      }
-
-      // 개인정보 수집안내
-      .info-box {
-        padding-bottom: 1rem;
-        .title-area {
-          padding-bottom: 2rem;
-          .title {
-            position: relative;
-            font-size: 2.4rem;
-            font-weight: bold;
-            line-height: 3.6rem;
-            &:after {
-              display: block;
-              content: "";
-              width: 100%;
-              height: 2px;
-              margin-top: 1rem;
-              background-color: #000;
-            }
-          }
-        }
-        .content-box {
-          width: 100%;
-          height: 100%;
-          border-radius: 1.2rem;
-          border: 2px solid rgba(0, 0, 0, 0.1);
-          .content-inner {
-            padding: 2.5rem 3rem;
-            .text-area {
-              display: flex;
-              // align-items: center;
-              > span {
-                display: block;
-                font-size: 2rem;
-                font-weight: 500;
-                color: #323232;
-                opacity: 0.5;
-              }
-            }
-          }
-        }
-      }
-
-      // 동의 체크버튼
-      .checkbox {
-        display: flex;
-        align-items: center;
-        position: relative;
-        padding: 1rem 0 11.3rem 0;
-        font-size: 2.4rem;
-        line-height: 3.6rem;
-        color: #323232;
-        font-weight: bold;
-
-        .checkbox-label {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-        }
-        input[type="checkbox"]:checked {
-          & + label > .icon {
-            background-image: url("../img/dummy/check_btn_pressed.png");
-          }
-        }
-        .icon {
-          display: inline-block;
-          width: 2.8rem;
-          height: 2.8rem;
-          margin-right: 1rem;
-          background-image: url("../img/dummy/check_btn_normal.png"); //
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-
-        .require {
-          color: $point-pink;
-        }
-      }
-
-      // 문의하기
-      .view-btn {
-        margin: 0 auto;
-        display: flex;
-        width: 280px;
-        height: 62px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 31px;
-        background-color: $point-pink;
-        font-weight: 500;
-        font-size: 2.4rem;
-        letter-spacing: -1.33px;
-      }
     }
   }
-}
 
-@include responsive(M) {
-  .content.cooperation {
-    .cooperation-bg {
-      height: 92.5vw;
-      min-height: 370px;
-      background-image: url("../img/dummy/cooperation_bg_mo.png");
-      .cooperation-con {
-        .title {
-          padding: 0 5%;
-        }
-        h1 {
-          font-size: 3rem;
-          letter-spacing: -1.8px;
-          line-height: 4.5rem;
-          margin-bottom: 8px;
-        }
-        .desc {
-          .top {
-            display: inline-block;
-            padding-bottom: 1.6rem;
-            font-size: 1.5rem;
-            letter-spacing: -0.63px;
-            line-height: 1.8rem;
-            color: #fff;
-          }
-          .bottom {
-            font-size: 1.2rem;
-            letter-spacing: -0.5px;
-            line-height: 1.8rem;
-            color: rgba(255, 255, 255, 0.6);
-            > span {
-              display: block;
-            }
-          }
-        }
+  @media screen and (max-width: 768px) {
+    th {
+      &:last-child {
+        display: none;
       }
     }
-
-    .form-area {
-      input[type="text"],
-      input[type="number"],
-      input[type="tel"],
-      input[type="email"],
-      input[type="password"] {
-        height: auto;
-        padding: 1.3rem 1.5rem;
-        font-size: 1.6rem;
-      }
-      .form-inner {
-        width: 100%;
-        max-width: 100%;
-        padding: 3rem 2.4rem 6rem 2.4rem;
-        .title-area {
-          padding-bottom: 3rem;
-          .desc-area {
-            line-height: 2.5rem;
-            .desc {
-              font-size: 1.5rem;
-            }
-          }
-        }
-
-        .form-item-area {
-          .field {
-            margin-bottom: 2rem;
-            .field-label {
-              font-size: 1.7rem;
-              line-height: 2.5rem;
-            }
-          }
-
-          .info-box {
-            .title-area {
-              .title {
-                line-height: 2.5rem;
-                font-size: 1.7rem;
-              }
-            }
-
-            .content-box {
-              .content-inner {
-                padding: 1.3rem 1.5rem;
-                .text-area {
-                  padding-bottom: 4px;
-                  > span {
-                    font-size: 1.5rem;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .checkbox {
-          padding: 1rem 0 5.2rem 0;
-          line-height: 2.8rem;
-          font-size: 1.5rem;
-          .checkbox-label {
-            align-items: flex-start;
-          }
-          .icon {
-            margin-right: 0.5rem;
-          }
-        }
-
-        .view-btn {
-          margin: 0px auto;
-          width: 196px;
-          height: 43.5px;
-          border-radius: 21.25px;
-          font-size: 1.68rem;
-          letter-spacing: -1.33px;
-        }
-      }
-
-      textarea {
-        font-size: 1.6rem;
+    td {
+      &:last-child {
+        display: none;
       }
     }
   }

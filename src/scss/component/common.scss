@@ -63,19 +63,19 @@
       &.result {
         .year {
           padding-top: 2rem;
-          @include font(1.2rem, 400, $white2, 1.2rem);
+          @include font(1.2rem, 400, $white, 1.2rem);
         }
         .month {
           padding-top: 1rem;
-          @include font(1.8rem, 400, $white2, 2rem);
+          @include font(1.8rem, 400, $white, 2rem);
         }
         .bage {
           @include flex(row, center, center);
           width: 5rem;
           height: 13px;
           margin: 8px auto;
-          @include font(1rem, 400, $white2, 1rem);
-          border: 1px solid $black6;
+          @include font(1rem, 400, $white, 1rem);
+          border: 1px solid $black;
           border-radius: 1rem;
         }
       }
@@ -83,19 +83,19 @@
       &.ing {
         .year {
           padding-top: 2rem;
-          @include font(1.2rem, 400, $white2, 1.2rem);
+          @include font(1.2rem, 400, $white, 1.2rem);
         }
         .month {
           padding-top: 1rem;
-          @include font(1.8rem, 400, $white2, 2rem);
+          @include font(1.8rem, 400, $white, 2rem);
         }
         .bage {
           @include flex(row, center, center);
           width: 5rem;
           height: 13px;
           margin: 8px auto;
-          @include font(1rem, 400, $white2, 1rem);
-          border: 1px solid $black6;
+          @include font(1rem, 400, $white, 1rem);
+          border: 1px solid $black;
           border-radius: 1rem;
         }
       }
@@ -103,19 +103,19 @@
       &.will {
         .year {
           padding-top: 2rem;
-          @include font(1.2rem, 400, $white2, 1.2rem);
+          @include font(1.2rem, 400, $white, 1.2rem);
         }
         .month {
           padding-top: 1rem;
-          @include font(1.8rem, 400, $white2, 2rem);
+          @include font(1.8rem, 400, $white, 2rem);
         }
         .bage {
           @include flex(row, center, center);
           width: 5rem;
           height: 13px;
           margin: 8px auto;
-          @include font(1rem, 400, $white2, 1rem);
-          border: 1px solid $black6;
+          @include font(1rem, 400, $white, 1rem);
+          border: 1px solid $black;
           border-radius: 1rem;
         }
       }
