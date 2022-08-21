@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta http-equiv="Cache-Control" content="no-cache" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>test11</title>
+    <title>button</title>
 
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
 
@@ -34,7 +34,7 @@
                 <nav>
                     <ul class="list">
                         <li class="list-item">
-                            <a href="../component/form.html" class="inner active">
+                            <a href="../component/button.html" class="inner active">
                                 button
                             </a>
                         </li>
@@ -53,14 +53,82 @@
             </aside>
             <!--//END sidebar -->
 
-            <div class="contents">
-                <!-- 체크박스 -->
-                <div class="field">
-
+            <main class="contents">
+                <!----- search box ------>
+                <!-- 검색어 없는 경우 -->
+                <h2 class="main-title">검색버튼</h2>
+                <div class="sesarch-container">
+                    <form>
+                        <fieldset>
+                            <legend>검색</legend>
+                            <div class="search-bar">
+                                <div class="search-title"><strong>검색 영역 타이틀 있는 경우</strong></div>
+                                <div class="search-input">
+                                    <label for="search-input-id" class="ir">검색어 입력</label>
+                                    <div class="input">
+                                        <input type="text" id="search-input-id" value="" placeholder="검색어를 입력해주세요">
+                                        <button type="button" class="btn-remove show"><span>검색어 지우기</span></button>
+                                        <button type="button" class="btn-search show"><span>검색하기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
+                <!-- 검색어 있는 경우 -->
+                <div class="sesarch-container">
+                    <form>
+                        <fieldset>
+                            <legend>검색</legend>
+                            <div class="search-bar">
+                                <div class="search-title"><strong>검색 영역 타이틀 있는 경우</strong></div>
+                                <div class="search-input">
+                                    <label for="search-input-id" class="ir">검색어 입력</label>
+                                    <div class="input">
+                                        <input type="text" id="search-input-id" value="검색어 값이 있는 경우" placeholder="검색어를 입력해주세요">
+                                        <button type="button" class="btn-remove show"><span>검색어 지우기</span></button>
+                                        <button type="button" class="btn-search show"><span>검색하기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                
+                <div class="content-area">
+                    <!------ button ------>
+                    <div>
+                        <div class="button-area">
+                            <button type="button" class="btn btn-white"><span>로그인</span></button>
+                            <button type="button" class="btn btn-secondary"><span>로그아웃</span></button>
+                            <button type="button" class="btn btn-primary"><span>취소</span></button>
+                            <button type="button" class="btn btn-dim"><span>취소</span></button>
+                            <button type="button" class="btn btn"><span>확인</span></button>
+                            <button type="button" class="btn" disabled><span>확인</span></button>
+                        </div>
+                        <div class="button-area">
+                            <button type="button" class="btn btn-black"><span>로그아웃</span></button>
+                        </div>
+                        <div class="button-area btn-center">
+                            <button type="button" class="btn btn-white"><span>로그인</span></button>
+                            <button type="button" class="btn btn-primary"><span>취소</span></button>
+                            <button type="button" class="btn"><span>확인</span></button>
+                        </div>
+                        <div class="button-area btn-center">
+                            <button type="button" class="btn btnSizeMiddle"><span>높이 55px</span></button>
+                          </div>
+                          <div class="button-area btn-center">
+                            <button type="button" class="btn btnSizeSmall"><span>높이 50px</span></button>
+                          </div>
+                          <div class="button-area btn-center">
+                            <button type="button" class="btn btnSizeXXSmall"><span>높이 44px</span></button>
+                          </div>
+                    </div>
+                </div>
+
                 <!--//END 선택버튼 -->
 
-            </div>
+            </main>
         </div>
         <!--//END content -->
     </div>

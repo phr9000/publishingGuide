@@ -26,7 +26,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta http-equiv="Cache-Control" content="no-cache" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>test</title>
+    <title>button</title>
 
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
 
@@ -72,14 +72,34 @@
             </aside>
             <!--//END sidebar -->
 
-            <div class="contents">
+            <main class="contents">
+                <!-- search box -->
+                <h2 class="main-title">검색버튼</h2>
+                <div class="sesarch-container">
+                    <form>
+                        <fieldset>
+                            <legend>검색</legend>
+                            <div class="search-bar">
+                                <div class="search-title"><strong>검색 영역 타이틀 있는 경우</strong></div>
+                                <div class="search-input">
+                                    <label for="search-input-id" class="ir">검색어 입력</label>
+                                    <div class="input">
+                                        <input type="text" id="search-input-id" value="" placeholder="검색어를 입력해주세요">
+                                        <button type="button" class="btn-remove show"><span>검색어 지우기</span></button>
+                                        <button type="button" class="btn-search show">검색하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
                 <!-- 체크박스 -->
                 <div class="field">
 
                 </div>
                 <!--//END 선택버튼 -->
 
-            </div>
+            </main>
         </div>
         <!--//END content -->
     </div>
