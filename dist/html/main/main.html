@@ -53,7 +53,7 @@
                 <nav>
                     <ul class="list">
                         <li class="list-item">
-                            <a href="../component/form.html" class="inner active">
+                            <a href="../component/button.html" class="inner active">
                                 button
                             </a>
                         </li>
@@ -72,8 +72,9 @@
             </aside>
             <!--//END sidebar -->
 
-            <main class="contents">
-                <!-- search box -->
+            <div class="contents">
+                <!----- search box ------>
+                <!-- 검색어 없는 경우 -->
                 <h2 class="main-title">검색버튼</h2>
                 <div class="sesarch-container">
                     <form>
@@ -86,19 +87,117 @@
                                     <div class="input">
                                         <input type="text" id="search-input-id" value="" placeholder="검색어를 입력해주세요">
                                         <button type="button" class="btn-remove show"><span>검색어 지우기</span></button>
-                                        <button type="button" class="btn-search show">검색하기</button>
+                                        <button type="button" class="btn-search show"><span>검색하기</span></button>
                                     </div>
                                 </div>
                             </div>
                         </fieldset>
                     </form>
                 </div>
-                <!-- 체크박스 -->
-                <div class="field">
-
+                <!-- 검색어 있는 경우 -->
+                <div class="sesarch-container">
+                    <form>
+                        <fieldset>
+                            <legend>검색</legend>
+                            <div class="search-bar">
+                                <div class="search-title"><strong>검색 영역 타이틀 있는 경우</strong></div>
+                                <div class="search-input">
+                                    <label for="search-input-id" class="ir">검색어 입력</label>
+                                    <div class="input">
+                                        <input type="text" id="search-input-id" value="검색어 값이 있는 경우" placeholder="검색어를 입력해주세요">
+                                        <button type="button" class="btn-remove show"><span>검색어 지우기</span></button>
+                                        <button type="button" class="btn-search show"><span>검색하기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
-                <!--//END 선택버튼 -->
 
+                <div class="content-area">
+                    <!------ button ------>
+                    <div>
+                        <div class="button-area">
+                            <button type="button" class="btn btn-white"><span>로그인</span></button>
+                            <button type="button" class="btn btn-secondary"><span>로그아웃</span></button>
+                            <button type="button" class="btn btn-primary"><span>취소</span></button>
+                            <button type="button" class="btn btn-dim"><span>취소</span></button>
+                            <button type="button" class="btn btn"><span>확인</span></button>
+                            <button type="button" class="btn" disabled><span>확인</span></button>
+                        </div>
+                        <div class="button-area">
+                            <button type="button" class="btn btn-black"><span>로그아웃</span></button>
+                        </div>
+                        <div class="button-area btn-center">
+                            <button type="button" class="btn btn-white"><span>로그인</span></button>
+                            <button type="button" class="btn btn-primary"><span>취소</span></button>
+                            <button type="button" class="btn"><span>확인</span></button>
+                        </div>
+                        <div class="button-area btn-center">
+                            <button type="button" class="btn btn-size-middle"><span>높이 55px</span></button>
+                        </div>
+                        <div class="button-area btn-center">
+                            <button type="button" class="btn btn-size-small"><span>높이 50px</span></button>
+                        </div>
+                        <div class="button-area btn-center">
+                            <button type="button" class="btn btn-size-xx-small"><span>높이 44px</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--//END 선택버튼 -->
+                <div class="line"></div>
+                <h2 class="main-title">본인인증 방법 선택 버튼</h2>
+                <div class="type-certification">
+                    <div class="certification-container">
+                        <button type="button" class="btn-certify-pass active" title="새 창 열림">
+                            <span class="icon"></span>
+                            <span class="label">PASS 인증</span>
+                        </button>
+                        <button type="button" class="btn-certify-toss" title="새 창 열림">
+                            <span class="icon"></span>
+                            <span class="label">TOSS 인증</span>
+                        </button>
+                        <button type="button" class="btn-certify-kakao" title="새 창 열림">
+                            <span class="icon"></span>
+                            <span class="label">카카오 인증</span>
+                        </button>
+                        <button type="button" class="btn-certify-naver" title="새 창 열림">
+                            <span class="icon"></span>
+                            <span class="label">네이버 인증</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- input 태그 -->
+                <div class="field field-input">
+                    <label for="input-id-01" class="field-label">Input default</label>
+                    <div class="field-form">
+                        <div class="input">
+                            <input type="text" id="input-id-01" value="기본 인풋">
+                        </div>
+                    </div>
+                </div>
+                <div class="field field-input">
+                    <label for="input-id-02" class="field-label">Input 하단 </label>
+                    <div class="field-form">
+                        <div class="input">
+                            <input type="text" id="input-id-01">
+                            <div class="add-explain"><span>인풋 하단 추가 설명</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 체크박스 -->
+                <div class="field field-checkbox">
+                    <div class="field-label">체크박스 사용법</div>
+                    <div class="field-form">
+                        <div class="checkbox">
+                            <input type="checkbox" id="input-id-07" checked>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             </main>
         </div>
         <!--//END content -->

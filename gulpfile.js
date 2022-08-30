@@ -16,12 +16,15 @@ const reload = browsersync.reload;
 const cleanCSS = require("gulp-clean-css");
 const fileinclude = require("gulp-file-include");
 const prettyHtml = require("gulp-pretty-html");
+const gulpEslint = require("gulp-eslint");
 // Clean assets
 
 function clear() {
   return src("./assets/*", {
     read: false,
   }).pipe(clean());
+
+  done();
 }
 
 // coding List CSS function
@@ -100,17 +103,20 @@ function images() {
     .pipe(dest("./dist/assets/images"));
 }
 
+// "./src/html/**/*.*"
+// prefix: "@@",
+//       basepath: "./src/html/component",
+
+
 // html function
 function html(done) {
-  return src(["./src/html/**/*.*"])
-    .pipe(
-      fileinclude({
-        prefix: "@@",
-        basepath: "./src/html/component",
-      })
-    )
-    .pipe(prettyHtml())
-    .pipe(dest("./dist/html"));
+  const path = [
+    {source: './src/html/*/*', include: './src/include/', destination: './dist/html'}
+  ];
+
+  for(var i = 0; i < path.length; i++){
+    src(path[i].source).pipe(fileinclude({prefix: "@@", basepath: path[i].include})).pipe(dest(path[i].destination));
+  }
   done();
 }
 
@@ -162,4 +168,4 @@ function browserSync() {
 
 // Tasks to define the execution of the functions simultaneously or in series
 exports.watch = parallel(watchFiles, font, lib_js, browserSync);
-exports.default = series(clear, parallel(js, css, images, codingListCss));
+exports.default = series(clear, parallel(js, css, images, codingListCss, html));
