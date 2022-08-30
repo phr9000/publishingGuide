@@ -58,7 +58,10 @@ h2 {
   padding-left: 25rem;
   padding-top: 8.6rem;
   background-color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
+  @media (max-width: 1200px) {
+    padding-left: 0;
+  }
   .main-title {
     font-size: 1.8rem;
     color: #000;
@@ -162,4 +165,10 @@ h2 {
   position: relative;
   max-width: 1200px;
   overflow: hidden;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
 }

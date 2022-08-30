@@ -9,7 +9,10 @@
   padding-top: 5.6rem;
   overflow-y: scroll;
   background-color: $gray-6;
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
+  @media (max-width: 1200px) {
+    transform: translatex(-250px);
+  }
 
   .title {
     padding: 1rem 2rem;
