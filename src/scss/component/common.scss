@@ -70,6 +70,14 @@ h2 {
   }
 }
 
+.contents::after {
+  content: '';
+  display: block; 
+  width: 100%; 
+  height: 110px;
+  background-color: #fff; 
+}
+
 // slide
 // Date-Slide
 .sport-vote-container {
